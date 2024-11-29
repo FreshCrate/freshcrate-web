@@ -72,7 +72,8 @@ const Navbar = () => {
               `}
               onClick={() => setIsMenuOpen(false)} // Close menu on link click
             >
-              {link.name}
+              {link.name} 
+              {/* TODO: Rework this */}
             </a>
           </li>
         ))}
