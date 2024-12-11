@@ -5,6 +5,7 @@ import NotFound from "./NotFound";
 import Navbar from "./components/Navbar";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
+import About from "./components/About";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           {/* Dynamic route for blog posts */}
         </Routes>
+        <About/>
       <Team/>
       <Footer/>
     </Router>
