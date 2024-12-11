@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from "/assets/images/freshcrate_logo.png";
 import { company, support } from '../constants/navLinks';
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
