@@ -13,7 +13,7 @@ const Team = () => {
 
         
 
-        <div className='grid lg:h-[30rem] h-auto w-full lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-9'>
+        <div className='grid lg:h-[30rem] h-auto w-11/12 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-9 mx-auto'>
             {/* Team Section 1 */}
 
             <div className='bg-[rgba(4,148,79,0.05)] lg:w-full md:w-[1/2] w-[9/10] h-[500px] justify-center items-center flex flex-col rounded-t-full rounded-b-full'>
