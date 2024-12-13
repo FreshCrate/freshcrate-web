@@ -58,9 +58,9 @@ const Navbar = () => {
         <ul
           className={`${
             isMenuOpen
-              ? "fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-8 z-10"
-              : "hidden"
-          } md:flex md:items-center md:space-x-12`}
+            ? "fixed top-0 left-0 lg:right-0 right-24 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-8 z-10 lg:h-screen md:h-auto"
+            : "hidden md:flex md:items-center md:space-x-12"
+            } lg:h-auto lg:bg-transparent`}
         >
           {navLinks.map((link) => (
             <li key={link.name}>

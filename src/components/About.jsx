@@ -12,7 +12,7 @@ const About = () => {
         </div>
 
         
-        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-4/5 mx-auto w-'>
 
             {/* 1st Section */}
             <div className='grid text-black w-[8/10] p-12 mt-8 px-6 md:px-12'>
