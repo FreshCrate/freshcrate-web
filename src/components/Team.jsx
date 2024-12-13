@@ -77,9 +77,7 @@ const Team = () => {
                             <RiTwitterXFill />
                         </div>
 
-                        <div className='border border-black rounded-full p-2'>
-                            <FaLinkedinIn />
-                        </div> 
+                        
                         
                         
                         
