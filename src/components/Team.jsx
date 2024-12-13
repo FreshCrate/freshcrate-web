@@ -1,6 +1,7 @@
 import React from 'react'
 import face from "/assets/images/face.jpg";
-import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { FaFacebookF, FaInstagram, FaLinkedinIn} from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const Team = () => {
   return (
@@ -27,20 +28,20 @@ const Team = () => {
                     {/* Icons */}
                     <div className='flex flex-row space-x-3 justify-center text-gray-800'>
                         <div className='border border-black rounded-full p-2'>
-                            <Facebook  />
+                            <FaFacebookF />
                         </div>
 
                         <div className='border border-black rounded-full p-2'>
-                            <Instagram  />
+                            <FaInstagram  />
                         </div>
 
                         <div className='border border-black rounded-full p-2'>
-                            <Twitter />
+                            <RiTwitterXFill />
                         </div>
 
                         <div className='border border-black rounded-full p-2'>
-                            <Linkedin />
-                        </div>
+                            <FaLinkedinIn />
+                        </div> 
                         
                         
                         
@@ -65,20 +66,20 @@ const Team = () => {
                     {/* Icons */}
                     <div className='flex flex-row space-x-3 justify-center text-gray-800'>
                         <div className='border border-black rounded-full p-2'>
-                            <Facebook  />
+                            <FaFacebookF />
                         </div>
 
                         <div className='border border-black rounded-full p-2'>
-                            <Instagram  />
+                            <FaInstagram  />
                         </div>
 
                         <div className='border border-black rounded-full p-2'>
-                            <Twitter />
+                            <RiTwitterXFill />
                         </div>
 
                         <div className='border border-black rounded-full p-2'>
-                            <Linkedin />
-                        </div>
+                            <FaLinkedinIn />
+                        </div> 
                         
                         
                         
@@ -103,20 +104,20 @@ const Team = () => {
                     {/* Icons */}
                     <div className='flex flex-row space-x-3 justify-center text-gray-800'>
                         <div className='border border-black rounded-full p-2'>
-                            <Facebook  />
+                            <FaFacebookF />
                         </div>
 
                         <div className='border border-black rounded-full p-2'>
-                            <Instagram  />
+                            <FaInstagram  />
                         </div>
 
                         <div className='border border-black rounded-full p-2'>
-                            <Twitter />
+                            <RiTwitterXFill />
                         </div>
 
                         <div className='border border-black rounded-full p-2'>
-                            <Linkedin />
-                        </div>
+                            <FaLinkedinIn />
+                        </div> 
                         
                         
                         
