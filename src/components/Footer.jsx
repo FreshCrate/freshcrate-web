@@ -1,6 +1,7 @@
 import logo from "/assets/images/freshcrate_logo.png";
 import { company, support } from '../constants/navLinks';
-import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { FaFacebookF, FaInstagram, FaLinkedinIn} from "react-icons/fa";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
@@ -55,11 +56,13 @@ const Footer = () => {
                     <h1 className='text-gray-600'>&copy; FreshCrate2024 All right reserved.</h1>
                 </div>
 
-                <div className='space-x-6 text-green-700 flex flex-wrap  lg:justify-end w-full cursor-pointer'>
-                    <Facebook/>
-                    <Twitter/>
-                    <Instagram/>
-                    <Linkedin/>
+                <div className='space-x-6  text-green-700 flex flex-wrap  lg:justify-end w-full cursor-pointer'>
+                    
+                    <FaFacebookF />
+                    <FaInstagram  />
+                    <RiTwitterXFill />
+                    <FaLinkedinIn />
+                                      
                 </div>
             </div>
         

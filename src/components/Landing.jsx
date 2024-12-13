@@ -1,6 +1,7 @@
 import { FiArrowUpRight } from "react-icons/fi";
 import hero from "/assets/images/hero.png";
 import { useEffect, useState } from "react";
+import { BadgeCheck, ChefHat, HeartPulse, Leaf } from "lucide-react";
 
 const Landing = () => {
   const [source, setSource] = useState("preload.jpg");
@@ -151,20 +152,7 @@ const Landing = () => {
               {/* Item 1 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6 text-green-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+                <BadgeCheck className="text-green-600 w-6 h-6"/>
                 </div>
                 <span className="text-black font-medium text-lg">
                   Uncompromising Quality
@@ -173,20 +161,7 @@ const Landing = () => {
               {/* Item 2 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6 text-green-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 10h18M9 21V3M15 21V3"
-                    />
-                  </svg>
+                <Leaf className="text-green-600 w-6 h-6"/>
                 </div>
                 <span className="text-black font-medium text-lg">
                   Fresh Ingredients
@@ -195,20 +170,7 @@ const Landing = () => {
               {/* Item 3 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6 text-green-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 8c-4.97 0-9 2.686-9 6s4.03 6 9 6 9-2.686 9-6-4.03-6-9-6z"
-                    />
-                  </svg>
+                <HeartPulse className="text-green-600 w-6 h-6"/>
                 </div>
                 <span className="text-black font-medium text-lg">
                   Healthy Nutrition
@@ -217,20 +179,7 @@ const Landing = () => {
               {/* Item 4 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6 text-green-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M8 16l-4-4 4-4M16 8l4 4-4 4"
-                    />
-                  </svg>
+                <ChefHat className="text-green-600 w-6 h-6"/>
                 </div>
                 <span className="text-black font-medium text-lg">
                   Curated Recipes
