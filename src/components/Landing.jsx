@@ -1,6 +1,7 @@
 import { FiArrowUpRight } from "react-icons/fi";
 import hero from "/assets/images/hero.png";
 import { useEffect, useState } from "react";
+import { BadgeCheck, ChefHat, HeartPulse, Leaf } from "lucide-react";
 
 const Landing = () => {
   const [source, setSource] = useState("preload.jpg");
@@ -33,7 +34,7 @@ const Landing = () => {
     <div className="flex flex-col min-h-screen bg-white">
       {/* Header Section */}
       <header
-        className="relative bg-cover bg-center md:h-screen"
+        className="relative bg-center bg-cover md:h-screen"
         style={{
           backgroundImage: `url(${source})`,
           backgroundSize: "cover",
@@ -42,16 +43,16 @@ const Landing = () => {
           backgroundColor: "#D9D9D9",
         }}
       >
-        <div className="h-full flex items-center">
-          <div className="container mx-auto px-6 md:px-12 py-48 md:py-0">
+        <div className="flex items-center h-full">
+          <div className="container px-6 py-48 mx-auto md:px-12 md:py-0">
             <div className="bg-[#D9D9D9] bg-opacity-30 px-6 md:px-12 py-9 rounded-3xl">
-              <h1 className="text-4xl md:text-6xl text-white font-bold">
+              <h1 className="text-4xl font-bold text-white md:text-6xl">
                 Where Health meets Comfort
               </h1>
 
               <div className="relative mt-6">
-                <div className="absolute top-0 left-0 h-full w-1 bg-white hidden md:block"></div>
-                <p className="text-lg md:text-xl text-white pl-4">
+                <div className="absolute top-0 left-0 hidden w-1 h-full bg-white md:block"></div>
+                <p className="pl-4 text-lg text-white md:text-xl">
                   Experience fresh, nutritious, and affordable meal solutions
                   designed for every lifestyle and health need. Join us in
                   promoting balanced diets and reducing food insecurity across
@@ -59,7 +60,7 @@ const Landing = () => {
                 </p>
               </div>
 
-              <button className="mt-8 px-6 py-3 bg-primary-500 text-white rounded-xl shadow hover:bg-primary-600">
+              <button className="px-6 py-3 mt-8 text-white shadow bg-primary-500 rounded-xl hover:bg-primary-600">
                 Order Now
               </button>
             </div>
@@ -68,17 +69,17 @@ const Landing = () => {
       </header>
 
       {/* Content Section */}
-      <main className="container mx-auto px-6 md:px-12 py-8 md:py-16">
+      <main className="container px-6 py-8 mx-auto md:px-12 md:py-16">
         {/* About Us Section */}
         <section className="text-center md:py-24">
-          <div className="px-3 py-2 border border-primary-600 rounded-full inline-block">
-            <h2 className="text-xl text-primary-500 font-medium">About Us</h2>
+          <div className="inline-block px-3 py-2 border rounded-full border-primary-600">
+            <h2 className="text-xl font-medium text-primary-500">About Us</h2>
           </div>
-          {/* <h3 className="text-3xl md:text-5xl font-semibold mt-4 text-black">
+          {/* <h3 className="mt-4 text-3xl font-semibold text-black md:text-5xl">
             What we do
           </h3> */}
 
-          <p className="text-gray-600 px-4 max-w-4xl mx-auto border-y border-y-green-200 py-8 mt-5">
+          <p className="max-w-4xl px-4 py-8 mx-auto mt-5 text-gray-600 border-y border-y-green-200">
             FreshCrate makes meal preparation easy with fresh, farm-sourced meal
             kits that fit into your lifestyle. We provide high-quality
             ingredients and simple recipes for busy professionals, students,
@@ -90,12 +91,12 @@ const Landing = () => {
 
         {/* Meal Kits Section */}
         <section className="mt-16 text-black space-y-14">
-          <div className="text-left mb-6">
-            <h3 className="text-4xl md:text-5xl font-semibold  border-b border-primary-100 pb-4">
+          <div className="mb-6 text-left">
+            <h3 className="pb-4 text-4xl font-semibold border-b md:text-5xl border-primary-100">
               Meal Kits
             </h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {/* Meal Kit Cards */}
             {mealKit.map((kit, i) => (
               <div
@@ -105,12 +106,12 @@ const Landing = () => {
                 <div className="p-5">
                   <div className="flex items-center justify-between pb-5 border-b border-[rgba(4,148,79,0.3)]">
                     <h4 className="text-2xl font-medium">{kit.name}</h4>
-                    <button className="flex items-center text-white font-semibold hover:underline bg-primary-500 p-4 rounded-lg">
+                    <button className="flex items-center p-4 font-semibold text-white rounded-lg hover:underline bg-primary-500">
                       <FiArrowUpRight className="w-5 h-5" />
                     </button>
                   </div>
 
-                  <p className="text-gray-600 py-5 ">{kit.summary}</p>
+                  <p className="py-5 text-gray-600 ">{kit.summary}</p>
 
                   <img
                     src={kit.image}
@@ -128,16 +129,16 @@ const Landing = () => {
           </p>
         </section>
 
-        <section className="flex flex-col md:flex-row items-center justify-between py-12 md:py-24 bg-white gap-5 md:gap-28">
+        <section className="flex flex-col items-center justify-between gap-5 py-12 bg-white md:flex-row md:py-24 md:gap-28">
           {/* Left Side */}
-          <div className="md:w-1/2 text-left">
-            <h3 className="text-green-600 font-semibold text-sm mb-2">
+          <div className="text-left md:w-1/2">
+            <h3 className="mb-2 text-sm font-semibold text-green-600">
               Services
             </h3>
-            <h1 className="text-black font-bold text-4xl md:text-5xl leading-snug mb-4">
+            <h1 className="mb-4 text-4xl font-bold leading-snug text-black md:text-5xl">
               Nutrition at your doorstep
             </h1>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-lg leading-relaxed text-gray-600">
               We deliver meal kits with fresh, high-quality ingredients right to
               your doorstep, designed for easy cooking and optimal nutrition.
               Our curated kits cater to various lifestyles, offering convenient,
@@ -146,93 +147,41 @@ const Landing = () => {
           </div>
 
           {/* Right Side */}
-          <div className="md:w-1/2 mt-10 md:mt-0">
+          <div className="mt-10 md:w-1/2 md:mt-0">
             <ul className="space-y-8">
               {/* Item 1 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6 text-green-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+                <BadgeCheck className="w-6 h-6 text-green-600"/>
                 </div>
-                <span className="text-black font-medium text-lg">
+                <span className="text-lg font-medium text-black">
                   Uncompromising Quality
                 </span>
               </li>
               {/* Item 2 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6 text-green-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 10h18M9 21V3M15 21V3"
-                    />
-                  </svg>
+                <Leaf className="w-6 h-6 text-green-600"/>
                 </div>
-                <span className="text-black font-medium text-lg">
+                <span className="text-lg font-medium text-black">
                   Fresh Ingredients
                 </span>
               </li>
               {/* Item 3 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6 text-green-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M12 8c-4.97 0-9 2.686-9 6s4.03 6 9 6 9-2.686 9-6-4.03-6-9-6z"
-                    />
-                  </svg>
+                <HeartPulse className="w-6 h-6 text-green-600"/>
                 </div>
-                <span className="text-black font-medium text-lg">
+                <span className="text-lg font-medium text-black">
                   Healthy Nutrition
                 </span>
               </li>
               {/* Item 4 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-6 h-6 text-green-600"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M8 16l-4-4 4-4M16 8l4 4-4 4"
-                    />
-                  </svg>
+                <ChefHat className="w-6 h-6 text-green-600"/>
                 </div>
-                <span className="text-black font-medium text-lg">
+                <span className="text-lg font-medium text-black">
                   Curated Recipes
                 </span>
               </li>
