@@ -58,9 +58,9 @@ const Navbar = () => {
         <ul
           className={`${
             isMenuOpen
-            ? "fixed top-0 left-0 lg:right-0 right-24 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-8 z-10 lg:h-screen md:h-auto"
-            : "hidden md:flex md:items-center md:space-x-12"
-            } lg:h-auto lg:bg-transparent`}
+              ? "fixed top-0 left-0 lg:right-0 right-24 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-8 z-10 lg:h-screen md:h-auto"
+              : "hidden md:flex md:items-center md:space-x-12"
+          } lg:h-auto lg:bg-transparent`}
         >
           {navLinks.map((link) => (
             <li key={link.name}>
@@ -71,9 +71,7 @@ const Navbar = () => {
                     ? "text-black hover:text-gray-700"
                     : "text-white hover:text-gray-300"
                 } ${
-                  isScrolled && link.isButton
-                    ? "bg-primary-500 text-white"
-                    : ""
+                  isScrolled && link.isButton ? "bg-primary-500 text-white" : ""
                 } ${
                   link.isButton
                     ? "md:bg-[#1F2122] rounded md:rounded-xl px-6 py-3 hover:bg-gray-600 hover:text-white transition"
