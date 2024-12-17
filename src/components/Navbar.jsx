@@ -1,15 +1,10 @@
 import { useState, useEffect } from "react";
-// import { FiMenu, FiX } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 import logo from "/assets/images/freshcrate_logo.png";
-import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  // const toggleNarbar = () => {
-  //   setIsMenuOpen(!isMenuOpen)
-  // }
 
   // Track scroll position
   useEffect(() => {
@@ -55,22 +50,9 @@ const Navbar = () => {
             className={`text-2xl ${isScrolled ? "text-black" : "text-white"}`}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? <X/> : <Menu/>}
+            {isMenuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
-
-        {/* Mobile Menu
-        <div className="flex flex-col justify-center lg:hidden md:">
-                <button onClick={toggleNarbar}>
-                  {isMenuOpen ? <X/> : <Menu/>}
-                </button>
-        </div>  */}
-
-        {/* {isMenuOpen && (
-          <div className="">
-
-          </div>
-        )} */}
 
         {/* Navigation Links */}
         <ul
@@ -79,7 +61,6 @@ const Navbar = () => {
               ? "fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-8 z-10"
               : "hidden"
           } md:flex md:items-center md:space-x-12`}
-          
         >
           {navLinks.map((link) => (
             <li key={link.name}>

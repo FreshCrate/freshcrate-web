@@ -54,7 +54,7 @@ const Team = () => {
              {/* Team Section 2 */}
 
              <div className='bg-[rgba(4,148,79,0.05)] lg:w-full md:w-[1/2] w-[9/10] h-[500px] justify-center items-center flex flex-col rounded-t-full rounded-b-full'>
-                <img src={face} alt='Oyebamiji Israel'
+                <img src={face} alt='Ihuarulam Gideon'
                 className='rounded-full w-52 h-52 mb-8'
                 />
 
@@ -92,7 +92,7 @@ const Team = () => {
             {/* Team Section 3 */}
 
             <div className='bg-[rgba(4,148,79,0.05)] lg:w-full md:w-[1/2] w-[9/10] h-[500px] justify-center items-center flex flex-col rounded-t-full rounded-b-full'>
-                <img src={face} alt='Oyebamiji Israel'
+                <img src={face} alt='Nwakaihe Onyekachi'
                 className='rounded-full w-52 h-52 mb-8'
                 />
 
