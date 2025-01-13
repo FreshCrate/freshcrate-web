@@ -2,6 +2,9 @@ import { FiArrowUpRight } from "react-icons/fi";
 import hero from "/assets/images/hero.png";
 import { useEffect, useState } from "react";
 import { BadgeCheck, ChefHat, HeartPulse, Leaf } from "lucide-react";
+import About from "./About";
+import Team from "./Team";
+import Crowdfunding from "./Crowdfunding";
 
 const Landing = () => {
   const [source, setSource] = useState("preload.jpg");
@@ -152,7 +155,7 @@ const Landing = () => {
               {/* Item 1 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                <BadgeCheck className="w-6 h-6 text-green-600"/>
+                  <BadgeCheck className="w-6 h-6 text-green-600" />
                 </div>
                 <span className="text-lg font-medium text-black">
                   Uncompromising Quality
@@ -161,7 +164,7 @@ const Landing = () => {
               {/* Item 2 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                <Leaf className="w-6 h-6 text-green-600"/>
+                  <Leaf className="w-6 h-6 text-green-600" />
                 </div>
                 <span className="text-lg font-medium text-black">
                   Fresh Ingredients
@@ -170,7 +173,7 @@ const Landing = () => {
               {/* Item 3 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                <HeartPulse className="w-6 h-6 text-green-600"/>
+                  <HeartPulse className="w-6 h-6 text-green-600" />
                 </div>
                 <span className="text-lg font-medium text-black">
                   Healthy Nutrition
@@ -179,7 +182,7 @@ const Landing = () => {
               {/* Item 4 */}
               <li className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
-                <ChefHat className="w-6 h-6 text-green-600"/>
+                  <ChefHat className="w-6 h-6 text-green-600" />
                 </div>
                 <span className="text-lg font-medium text-black">
                   Curated Recipes
@@ -189,6 +192,9 @@ const Landing = () => {
           </div>
         </section>
       </main>
+      <About />
+      <Crowdfunding />
+      <Team />
     </div>
   );
 };
