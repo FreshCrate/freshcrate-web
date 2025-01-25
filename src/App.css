@@ -1,6 +1,11 @@
-#root {
-  width: 100%;
-  max-width: 1512px;
-  margin: 0 auto;
-  background-color: #FFF;
+body {  
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --background-color: #ffffff;
+}
+
+* {
+  background-color: var(--background-color);
 }
