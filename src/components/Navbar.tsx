@@ -55,13 +55,12 @@ const Navbar = () => {
         maxW={"8xl"}
         mx="auto"
         zIndex="50"
-        borderBottom={isScrolled ? "2px solid" : "none"}
         boxShadow={isScrolled ? "md" : "none"}
         transition="all 0.3s"
       >
         {/* Mobile View */}
         <Box
-          className="flex items-center justify-between h-16 px-6 shadow-sm lg:pr-8"
+          className="flex justify-between items-center px-6 h-16 shadow-sm lg:pr-8"
           display={{ base: "flex", md: "none" }}
         >
           {/* Logo */}
@@ -114,11 +113,11 @@ const Navbar = () => {
 
         {/* Desktop View */}
         <Box
-          className="flex items-center justify-between px-6 shadow-sm lg:px-20 "
+          className="flex justify-between items-center px-6 shadow-sm lg:px-20"
           display={{ base: "none", md: "flex" }}
         >
           {/* Logo */}
-          <HStack className="h-16 my-4">
+          <HStack className="my-4 h-16">
             <a href="#">
               <img
                 src={logo}
