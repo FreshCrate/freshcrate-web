@@ -1,4 +1,4 @@
-body {  
+body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -6,6 +6,6 @@ body {
   --background-color: #ffffff;
 }
 
-* {
+.App {
   background-color: var(--background-color);
 }
