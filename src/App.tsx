@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
-
 import "./App.css";
+import Loader from "./components/Loader";
+import Team from "./components/Team";
 
+// Lazy-loaded components
 const NotFound = lazy(() => import("./components/NotFound"));
 const MealKits = lazy(() => import("./components/MealKits"));
 const CrowdfundingHome = lazy(() => import("./components/CrowdfundingHome"));
@@ -19,41 +21,42 @@ const Navbar = lazy(() => import("./components/Navbar"));
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Suspense fallback={<div>Loading...</div>}>
+      {/* Single Suspense boundary handles all lazy components */}
+      <Suspense fallback={<Loader />}>
+        <div className="App">
+          {/* Navbar */}
           <Navbar />
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+
+          {/* Main content / routes */}
           <Routes>
-            {/* Single-Page Sections */}
+            {/* Single-Page Sections (all on "/") */}
             <Route
               path="/"
               element={
-                <Suspense fallback={<div>Loading...</div>}>
-                  <>
-                    <Landing />
-                    <About />
-                    <MealKits />
-                    <CrowdfundingHome />
-                    <Services />
-                    <ComingSoon />
-                    <Subscribe />
-                    {/* Add more single-page sections here */}
-                  </>
-                </Suspense>
+                <>
+                  <Landing />
+                  <About />
+                  <MealKits />
+                  <CrowdfundingHome />
+                  <Services />
+                  <Team />
+                  <ComingSoon />
+                  <Subscribe />
+                </>
               }
             />
             {/* Separate Pages */}
             <Route path="/faq" element={<Faqs />} />
             <Route path="/crowdfunding" element={<Crowdfunding />} />
+
             {/* 404 Not Found */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
+
+          {/* Footer */}
           <Footer />
-        </Suspense>
-      </div>
+        </div>
+      </Suspense>
     </Router>
   );
 }
